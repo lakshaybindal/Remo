@@ -27,7 +27,7 @@ export default function Signin() {
         password: formData.password,
       });
       console.log("Sign in success:", response.data);
-      localStorage.setItem("authToken", response.data.token);
+      localStorage.setItem("token", response.data.token);
       navigate("/dashboard");
     } catch (err) {
       console.error("Sign in error:", err);

@@ -72,6 +72,7 @@ router.post(
         id: userId,
       },
     });
+    console.log(user);
     const repourl = req.body.repourl;
     const git = simpleGit();
     try {

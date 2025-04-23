@@ -31,9 +31,9 @@ export default function SignUp() {
       );
 
       console.log("Sign up success:", response.data);
-      localStorage.setItem("authToken", response.data.token);
+      localStorage.setItem("token", response.data.token);
       // Redirect to dashboard or home page
-      navigate("/readme");
+      navigate("/dashboard");
     } catch (err) {
       setError(
         axios.isAxiosError(err)
